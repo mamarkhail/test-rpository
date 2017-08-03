@@ -85,3 +85,16 @@ header h1,
 header nav {
   text-align: center;
 }
+
+.photos {
+  list-style-type: none;
+  padding: 0;
+}
+.photos li {
+  display: inline;
+  padding-left: 11px;
+}
+.photos img {
+  width: 153px;
+  height: auto;
+}
