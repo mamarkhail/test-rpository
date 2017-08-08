@@ -74,6 +74,7 @@ main {
   border: 1px solid #ddd;
   margin: 30px auto 0 auto;
   width: 500px;
+  background-image: url(images2/backg2.png);
 }
 
 header a,
@@ -91,10 +92,52 @@ header nav {
   padding: 0;
 }
 .photos li {
-  display: inline;
-  padding-left: 11px;
+  float: left;
+  width: 33.3%;
+  flex-grow: 1;
 }
 .photos img {
-  width: 153px;
+  width: 100%;
   height: auto;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+}
+body {
+  /* background-color: #587;
+  background-image: url(images2/backg.jpg);
+  background-position: top left;
+  background-repeat: repeat;*/
+  background: #587 url(images2/backg.jpg) top left repeat;
+}
+.recipes li {
+  background-image: url(images2/backg3.jpg);
+}
+/*.featured-image {
+  width: 500px;
+  height: 300px;
+  background: #fff url(images2/backg4.jpg) top left no-repeat;
+}*/
+.featuered-image h3 {
+  margin: 0;
+  border: 0;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 2em;
+}
+.featuered-image {
+  position: relative;
 }
